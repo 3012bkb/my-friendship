@@ -1,0 +1,597 @@
+<html><body><div class='alert alert-danger'><strong>Duplicate Reference Number is detected. Can not Proceed! Please try again.</strong></div></body></html>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Revenu And Land Reforms Department
+</title><link href="../common/css/main.css" rel="stylesheet" />
+    <script>
+        function validate() {
+            if (document.getElementById("txtname").value.trim() == "") {
+                alert("Remitter Name is required !!!");
+                document.getElementById("txtname").focus();
+                return false;
+            } else if (document.getElementById("txtphone").value.trim() == "") {
+                alert("Mobile No. is required !!!");
+                document.getElementById("txtphone").focus();
+                return false;
+            }
+            else if (document.getElementById("txtphone").value.length != 10) {
+                alert("Enter 10 digit Mobile No. !!!");
+                document.getElementById("txtphone").focus();
+                return false;
+            }
+            else if (document.getElementById("txtadd").value.trim() == "") {
+                alert("Address is required !!!");
+                document.getElementById("txtadd").focus();
+                return false;
+            }
+            return true;
+        }
+</script>
+
+    <style type="text/css">
+        .txtbox {
+            border: 1px solid #ccc;
+            height: 20px;
+            margin:5px;
+            font-family: Calibri;
+            font-size: 11pt;
+        }
+
+            .txtbox:hover {
+                border: 1px solid #365a9f;
+                box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.1);
+            }
+
+            .txtbox:focus {
+                background-color: #a2f9a2;
+                border: 1px solid #365a9f;
+                box-shadow: 0px 2px 8px 4px rgba(0,0,0,0.1);
+            }
+    </style>
+
+    <style type="text/css">
+        table th {
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        table th {
+            background-color: #F7F7F7;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .auto-style1 {
+            width: 398px;
+        }
+
+        .auto-style2 {
+            height: 50px;
+        }
+    </style>
+
+    <style type="text/css">
+        .gridcss {
+            width: 100%;
+            font-family: Calibri;
+            font-size: 15px;
+            /*white-space:nowrap;*/
+        }
+
+            .gridcss td, #gridcss th {
+                padding-left: 5px;
+                padding-right: 5px;
+                /*font-family: Calibri;
+                font-size: 12px;*/
+            }
+
+            /*.gridcss tr:hover {
+                background-color: limegreen;
+            }*/
+
+            .gridcss th {
+                text-align: left;
+                background-color: #eef1f5;
+                font-size: 13px;
+                font-weight:bold;
+                /*color: white;*/
+                /*padding-left: 5px;*/
+            }
+    </style>
+    </head>
+<body style="background:#c2e8c2;width:80%;margin-left: auto;margin-right: auto;margin-top:0">
+    <form method="post" action="./LandDetails.aspx?uid=Dj1Ut5xldQeBKGBMbAnS0g%3d%3d&amp;wid=r46ebc87e4b5ce2fe28308fd9f2a7baf3gdfgdf543g&amp;did=ppm1otJtr0A0j7z4oVC4Qw%3d%3d" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZOHePYgn60Hsf3-s3TzomLnyLIyYQe1pRmh9WJJaTT89dvcXS-bJOD7K8uennl87Ng2&amp;t=636940151766230707" type="text/javascript"></script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C1486BDE" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="vOX_aKZu50sTS4XPv47Sxzxj0fdGTtuE7C5lkmi1wLk4x0VWfy3aT45r21F29CmR5ZX46arc71IhBgr-XvB8WXboMtdFTCAb9N5uWDClj7k1" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ZAIgh4Rr00ALoZ+0WhYM/F6qe0yid4NdapIgzeMJUV1OAldTxf97n9sn/777NIFgEBpuTcAZbcPFt/rn+pMoQ9IozK6fG0fA7vyIdxq21tO1fPAe5YUr77wUi3u17+TetgEisDBoCGL7o/7yDvpd8ac8W/XXKklloOv+wbDOQgUhl3yGtjvEUQ+H9rC8lma7WfsiHj3RmliOGkq9fZx8GL4cAWDynA85IXI7MwWSNZCfVPyl/meDQEXT3HgQVeibtbe5nPU7PJWCX7EqsLlFyg==" />
+</div>
+
+        <div class="container" style=" width:100%">
+      
+     
+<div class="panel" style=" margin:auto; padding-top:5px; padding-bottom:8px;  background:#ffffff;  height:auto; margin:auto; border:none">
+ <img src="../common/images/logo2_new1.png"  align="absmiddle"/>
+
+    <span style="color:#FFFFFF; line-height:50px; font-size:36px; padding-left:180px"><img src="../common/images/logo2_new2.png"  align="absmiddle"/></span></div>
+
+<div class="panel" style="margin:auto; padding-top:10px; padding-bottom:10px;  text-indent:20px; background-color:#62c462">
+
+
+<div style="clear:both"></div>
+
+</div>
+
+   
+      </div>
+
+            <table style="width: 100%; background-color: white;">
+                <tr>
+                    <td>
+
+                      <br />
+                        <center>
+<fieldset style="width: 95%; margin: -5px  22px; background: #fff; -webkit-box-shadow: 0px 3px 38px 0px rgba(0,0,0,0.75); -moz-box-shadow: 0px 3px 38px 0px rgba(0,0,0,0.75); box-shadow: 0px 3px 38px 0px rgba(0,0,0,0.75);">
+<fieldset>
+<legend style="text-align: center; background-color: #62c462; color: white; font-weight: bold; font-family: Calibri; font-size: 14pt;height:35px">&nbsp;&nbsp;&nbsp;
+पंजी II विवरण&nbsp;&nbsp;&nbsp;</legend>
+
+    <table style="margin-left:10px;margin-right:10px;margin-bottom:10px">
+             
+             <tr>
+                 <td>
+                      <table border="1" cellpadding="2" cellspacing="0" style="width: 100%;font-family:Calibri;font-size:11pt">
+                          <tr>
+                              <td colspan="4" style="background-color:#e5ecf6;padding:5px;text-align:center">
+                                  <span id="Label1" style="font-weight:bold;">विवरण</span>
+                              </td>
+                          </tr>
+<tr>
+    <td  style="width :20%;padding-left:5px">
+        <span id="Label2">भाग वर्तमान</span>
+
+    </td>
+     <td  style="  width :30%;padding-left:5px">
+        <span id="lblBhag" style="font-weight:bold;">2         </span>
+    </td>
+     <td  style="  width :20%;padding-left:5px">
+
+        <span id="Label3">पृष्ठ संख्या</span>
+
+    </td>
+    <td  style="  width :30%;padding-left:5px">
+         <span id="lblPage" style="font-weight:bold;">368</span>
+    </td>
+
+</tr>
+
+
+<tr>
+    <td class="auto-style1" style="padding-left:5px;">
+        <span id="Label4">जिला का नाम</span>
+
+    </td>
+    <td style="padding-left:5px;">
+        
+        <span id="lblDistrict" style="font-weight:bold;">Katihar</span>
+
+    </td>
+    <td style="padding-left:5px;">
+
+        <span id="Label5">अनुमंडल नाम</span>
+
+    </td>
+    <td style="padding-left:5px;">
+        <span id="lblSubDivision" style="font-weight:bold;">Katihar</span>
+    </td>
+
+</tr>
+
+
+<tr>
+    <td class="auto-style1" style="padding-left:5px;">
+        <span id="Label9">अचंल का नाम</span>
+
+    </td>
+    <td style="padding-left:5px;">
+        <span id="lblBlock" style="font-weight:bold;">Katihar</span>
+    </td>
+    <td style="padding-left:5px;">
+
+        <span id="Label6">हलका का नाम</span>
+
+    </td>
+    <td style="padding-left:5px;">
+        <span id="lblHalka" style="font-weight:bold;">डहेरिया पंचायत/नगर निगम</span>
+    </td>
+
+</tr>
+
+
+<tr>
+    <td class="auto-style1" style="padding-left:5px;">
+        <span id="Label10">मौजा का नाम</span>
+
+    </td>
+    <td style="padding-left:5px;">
+        <span id="lblMauza" style="font-weight:bold;">वार्ड-30</span>
+    </td>
+    <td style="padding-left:5px;">
+
+        <span id="Label12">होल्डिग संख्या</span>
+
+    </td>
+    <td style="padding-left:5px;">
+        <span id="lblHolding" style="font-weight:bold;">N/A</span>
+    </td>
+
+</tr>
+
+
+<tr>
+    <td class="auto-style1" style="padding-left:5px;">
+        <span id="Label11">थाना नाम</span>
+
+    </td>
+    <td style="padding-left:5px;">
+        <span id="lblThana" style="font-weight:bold;">Katihar</span>
+    </td>
+    <td style="padding-left:5px;">
+
+        <span id="Label13">राजस्व थाना नंबर</span>
+
+    </td>
+    <td style="padding-left:5px;">
+        <span id="lblRevThana" style="font-weight:bold;">30</span>
+    </td>
+
+</tr>
+
+
+<tr>
+    <td class="auto-style1" style="padding-left:5px;">
+        <span id="Label14">तौजी संख्या</span>
+
+    </td>
+    <td style="padding-left:5px;">
+        <span id="lblTauzi" style="font-weight:bold;">0</span>
+    </td>
+    <td style="padding-left:5px;">
+        <span id="Label15">इस्टेट का नाम</span>
+
+    </td>
+    <td style="padding-left:5px;">
+        <span id="lblEstate" style="font-weight:bold;">BiHAR</span>
+    </td>
+
+</tr>
+
+
+<tr>
+    <td colspan ="4" >
+    <div>
+	<table class="gridcss" cellspacing="0" rules="all" border="1" id="gvSearch" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">क्र० स०</th><th scope="col">रैयत का नाम</th><th scope="col">जाति</th><th scope="col">निवासी</th>
+		</tr><tr>
+			<td>
+            <span id="gvSearch_lblRowNumber_0">1</span>
+        </td><td>सरस्वती देवी    सौहर / पति - अवधेश चौधरी</td><td>N/A</td><td>NAYA TOLA  , </td>
+		</tr>
+	</table>
+</div>
+         
+        </td>
+    
+</tr>
+
+
+
+<tr>
+     <td colspan="4" style="background-color:#e5ecf6;padding:5px;text-align:center">
+        
+        <span id="Label17" style="font-weight:bold;">निधारित लगान दर</span>
+
+     </td>
+    
+</tr>
+
+
+<tr>
+    <td colspan ="4" >
+        
+    <div>
+	<table class="gridcss" cellspacing="0" rules="all" border="1" id="gvLagaan" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">क्र० स०</th><th scope="col">भू-लगान</th><th scope="col">शिक्षा सेस</th><th scope="col">रोड सेस</th><th scope="col">स्वास्थ्य सेस</th><th scope="col">कृषि सेस</th><th scope="col">कुल</th>
+		</tr><tr>
+			<td style="width:50px;">
+            <span id="gvLagaan_lblRowNumber1_0">1</span>
+        </td><td>10.00</td><td>5.00</td><td>2.50</td><td>5.00</td><td>2.00</td><td>24.50</td>
+		</tr>
+	</table>
+</div>
+         
+     </td>
+    
+</tr>
+
+
+
+       <tr>
+     <td colspan="4" style="background-color:yellow;padding:5px;text-align:center">
+        
+        <span id="Label7" style="font-weight:bold;">अंतिम भुगतान का विवरण</span>
+
+     </td>
+    
+</tr>                   
+
+
+
+
+<tr>
+    <td colspan ="4" >
+        
+    <div>
+	<table class="gridcss" cellspacing="0" rules="all" border="1" id="GridView_paymentinfo" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">क्रमांक</th><th scope="col">भुगतान संख्या (Depositor ID)</th><th scope="col">रसीद संख्या (Transaction ID)</th><th scope="col">वर्ष से</th><th scope="col">वर्ष तक</th><th scope="col">भुगतान तिथि</th><th scope="col">कुल</th><th scope="col">स्थिति</th>
+		</tr><tr>
+			<td>
+            <span id="GridView_paymentinfo_lblRowNumber1_0">1</span>
+        </td><td>BLR21072021092329268097</td><td>21072021092329268097</td><td>2014-2015</td><td>2021-2022</td><td>7/21/2021 9:23:32 AM</td><td>200.00</td><td>Success</td>
+		</tr>
+	</table>
+</div>
+         
+     </td>
+</tr>
+<tr>
+    <td colspan ="4" align="center">
+        <input type="submit" name="btnlasttran" value="पिछले भुगतान के जानकारी के लिए यहां क्लिक करें" id="btnlasttran" class="btn-success" style="font-size:11pt;padding:5px;margin:5px" />
+    </td>
+</tr>
+<tr>
+     <td colspan="4" style="background-color:#e5ecf6;padding:5px;text-align:center">
+        
+        <span id="Label8" style="font-weight:bold;">अंतिम रसीद का विवरण</span>
+
+     </td>
+    
+</tr>
+
+
+<tr>
+    <td colspan ="4" >
+        
+    <div>
+	<table class="gridcss" cellspacing="0" rules="all" border="1" id="GridView1_receiptdetails" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">क्रमांक</th><th scope="col">रसीद संख्या</th><th scope="col">वर्ष से</th><th scope="col">वर्ष तक</th><th scope="col">भुगतान तिथि</th><th scope="col">कुल</th><th scope="col">देखें</th>
+		</tr><tr>
+			<td>
+            <span id="GridView1_receiptdetails_lblRowNumber1_0">1</span>
+        </td><td>21072021092329268097</td><td>2014-2015</td><td>2021-2022</td><td>2021-07-21 09:26:43</td><td>200</td><td>
+                    
+
+                
+
+                    <input type="submit" name="GridView1_receiptdetails$ctl02$Button2" value="देखे" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;GridView1_receiptdetails$ctl02$Button2&quot;, &quot;&quot;, false, &quot;&quot;, &quot;payment_receipt.aspx?uid=T3NwnqKwkrgkwhbk1%2fQsfQ%3d%3d&amp;did=ppm1otJtr0A0j7z4oVC4Qw%3d%3d&quot;, false, false))" id="GridView1_receiptdetails_Button2_0" class="btn-success" />
+
+                </td>
+		</tr>
+	</table>
+</div>
+         
+     </td>
+    
+</tr>
+
+ 
+
+<tr>
+     <td colspan="4" style="background-color:yellow;padding:5px;text-align:center">
+        
+        <span id="Label18" style="font-weight:bold;">बकाया राशि का विवरण</span>
+
+     </td>
+    
+</tr>
+
+
+<tr>
+    <td colspan ="4" align ="left" >
+       <table border="1"  cellpadding="2" cellspacing="0" style="width: 100%">
+             <tr style="font-weight: bold; font-size: large; color: #10740f">
+                 <td  style=" width :20%;padding-left:5px;">
+
+                     <span id="Label19">कुल बकाया राशि</span>
+                 </td>
+                 <td colspan ="3" style="padding-left:5px">
+                     <span id="lblTotDueAmt">49.00</span>
+
+                 </td>
+             </tr>
+             <tr style="font-weight: bold; font-size: x-large; color: blue">
+                 <td style="padding-left:5px">
+
+                     <span id="Label20">कुल देय राशि</span>
+                 </td>
+                 <td colspan ="3" style="padding-left:5px">
+                     <span id="lblTotDuePayableAmt">50.00</span>
+
+                 </td>
+             </tr>
+
+             <tr style="font-weight: bold;font-size:11pt;">
+                 <td style="padding-left:5px">
+
+                     <span id="Label22">वर्ष से : </span>
+                 </td>
+                 <td style="padding-left:5px">
+                     <span id="lblDueFrom">2022-2023</span>
+
+                 </td>
+                 <td style="padding-left:5px">
+ <span id="Label23">वर्ष तक : </span>
+
+                 </td>
+                 <td style="padding-left:5px">
+
+                     <span id="lblDueTo">2023-2024</span>
+
+                 </td>
+             </tr>
+           <tr style="font-weight: bold;font-size:11pt;">
+                 <td  style=" width :20%;padding-left:5px;">
+
+                     <span id="Label24">कुल वर्ष : </span>
+                 </td>
+                 <td colspan ="3" style="padding-left:5px">
+                     <span id="lblTotYear">2</span>
+
+                 </td>
+             </tr>
+
+           <tr>
+                 <td  style=" width :20%" colspan="4">
+
+    <div>
+	<table class="gridcss" cellspacing="0" rules="all" border="1" id="gvLagaan_details" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">क्र० स०</th><th scope="col">वित्तीय वर्ष</th><th scope="col">भू-लगान</th><th scope="col">शिक्षा सेस</th><th scope="col">रोड सेस</th><th scope="col">स्वास्थ्य सेस</th><th scope="col">कृषि सेस</th><th scope="col">कुल</th>
+		</tr><tr>
+			<td>1</td><td>2022-2023</td><td>10.00</td><td>5.00</td><td>2.50</td><td>5.00</td><td>2.00</td><td>24.50</td>
+		</tr><tr>
+			<td>2</td><td>2023-2024</td><td>10.00</td><td>5.00</td><td>2.50</td><td>5.00</td><td>2.00</td><td>24.50</td>
+		</tr>
+	</table>
+</div>
+         
+                 </td>
+                
+             </tr>
+
+        </table>
+        </td>
+    
+</tr>
+
+<tr>
+<td colspan="4" style="background-color:yellow;padding:5px;text-align:center">
+    <span id="Label16" style="font-weight:bold;">निजी विवरण</span>
+</td>
+</tr>
+<tr>
+    <td  style="width :15%;padding-left:5px">
+    <b>Remitter Name <span style="color: red">*</span></b>    
+    </td>
+     <td  style="width :40%;padding-left:5px">
+        <input name="txtname" type="text" value="Saraswati devi" id="txtname" class="txtbox" autocomplete="off" style="width:90%;" />
+    </td>
+     <td  style="width :15%;padding-left:5px">
+
+      <b>Mobile No.<span style="color: red">*</span></b>  
+
+    </td>
+    <td  style="  width :30%;padding-left:5px">
+         <input name="txtphone" type="text" value="9958128769" maxlength="10" id="txtphone" class="txtbox" onkeypress="if(event.keyCode&lt;48 || event.keyCode>57)event.returnValue=false;" autocomplete="off" style="width:154px;" />
+    </td>
+
+</tr>
+<tr>
+    <td style="padding-left:5px">
+        <b>Address<span style="color: red">*</span></b>
+    </td>
+    <td colspan="3" style="padding-left:5px">
+         <textarea name="txtadd" rows="3" cols="20" id="txtadd" class="txtbox" autocomplete="off" style="height:60px;width:80%;">
+katihar</textarea>
+    </td>
+   
+</tr>
+
+<tr>
+    <td colspan="4" style="color:red;font-family:Arial">
+        *NOTE: <br />यदि एक बार भुगतान हो चुका है, किंतु लगान रसीद नहीं मिल पा रहा है तो पिछले भुगतान की स्थिति स्पष्ट होने से पहले पुनः भुगतान ना करें| पिछले भुगतान की स्थिति स्पष्ट करने के लिए “लंबित लगान देखेँ” बटन का उपयोग करें| कृपया किसी प्रकार की शिकायत के लिए "lagaancomplaint@gmail.com" पर ईमेल करें|
+<br /><br />
+
+             During online payment of lagan, if amount got debited and you have not received the payment receipt. Please do not go for re-payment, until previous payment status is cleared. To know the status of previous payment, please use  “लंबित लगान देखेँ” option of this Portal. For any further queries please write to us at lagaancomplaint@gmail.com mentioning the Depostior ID and Transaction ID.
+    </td>
+</tr>
+
+<tr>
+    <td colspan="4">
+<input id="chkconfirm" type="checkbox" name="chkconfirm" checked="checked" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;chkconfirm\&#39;,\&#39;\&#39;)&#39;, 0)" />
+        &nbsp;&nbsp;<b>I agree to <a href="../terms/Default.aspx" target="_blank"><span style="color: #041280; text-decoration: none">Terms & Conditions</span></a></b>
+    </td>
+</tr>
+
+
+
+
+
+<tr>
+<td colspan="4" align="center">
+<input type="submit" name="btnpay" value="ऑनलाइन भुगतान करें" onclick="return validate();" id="btnpay" class="btn-primary" style="font-size:13pt;padding:5px" />
+    &nbsp;&nbsp;&nbsp;
+
+<input type="submit" name="btnSearch" value="पुनः खोज करें" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSearch&quot;, &quot;&quot;, false, &quot;&quot;, &quot;search.aspx&quot;, false, false))" id="btnSearch" class="btn-primary" style="font-size:13pt;padding:5px" />
+
+</td>
+</tr>
+
+
+                     </table>
+                 </td>
+
+             </tr>
+             
+        </table>
+                     </fieldset>
+              </fieldset>
+
+           
+    <br /><br />
+                        </center>
+                    </td>
+
+                </tr>
+
+            </table>
+       
+
+          </form>
+</body>
+</html>
+
